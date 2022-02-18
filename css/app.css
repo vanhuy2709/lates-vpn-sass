@@ -12,7 +12,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -76,8 +76,38 @@ body {
   color: #4f5665;
 }
 
+.button {
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.button--primary {
+  font-weight: 700;
+  background-color: #f53838;
+  color: white;
+  text-decoration: none;
+}
+.button--outline {
+  background-color: transparent;
+  color: #f53838;
+  font-weight: 500;
+  border: 1px solid;
+  text-decoration: none;
+}
+.button--rounded {
+  border-radius: 10px;
+  padding: 17px 65px;
+}
+
 .header {
   padding-top: 50px;
+  padding-bottom: 90px;
 }
 .header-container {
   display: flex;
@@ -119,6 +149,36 @@ body {
 .menu-link {
   color: inherit;
   text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s all;
+}
+.menu-link:hover {
+  opacity: 1;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 40px;
+}
+.hero-content {
+  width: 100%;
+  max-width: 555px;
+}
+.hero-heading {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #0b132a;
+}
+.hero-desc {
+  line-height: 1.875;
+  margin-bottom: 50px;
+}
+.hero-desc strong {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -15,3 +15,34 @@ body {
     font-family: $font;
     color: $text-color;
 }
+
+.button {
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 100rem;
+    font-family: $font;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &--primary {
+        font-weight: 700;
+        background-color: $primary-color;
+        color: white;
+        text-decoration: none;
+    }
+    
+    &--outline {
+        background-color: transparent;
+        color: $primary-color;
+        font-weight: 500;
+        border: 1px solid;
+        text-decoration: none;
+    }
+    &--rounded {
+        border-radius: 10px;
+        padding: 17px 65px;
+    }
+}
